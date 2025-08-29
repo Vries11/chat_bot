@@ -91,7 +91,7 @@ def generate_response(user_input, subject, style, memory):
     # 创建模型客户端
     client = ChatOpenAI(
         # 使用练习密钥"mock-key-123"
-        api_key="mock-key-123",
+        api_key="st.secrets["OPENAI_API_KEY"]",
         # 使用的模型 deepseek-chat
         model="deepseek-chat",
         # 指定Deepseek的API服务地址
